@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-金融伦理智慧课堂 · 里程碑自检脚本（自动批改）
+权衡 Scale Lab · 里程碑自检脚本（自动批改）
 
 用法：
-  1) 在本项目目录（ethics-site）里打开终端
+  1) 在本项目目录（scale-lab）里打开终端
   2) 运行：python check.py
   3) 看输出：[✓] 是通过，[✗] 是没做到，按提示改完再跑
 
@@ -225,7 +225,7 @@ def main():
     js_all = '\n'.join(c for _, c in collect_js())
 
     print('=' * 56)
-    print(' 金融伦理智慧课堂 · 里程碑自检')
+    print(' 权衡 Scale Lab · 里程碑自检')
     print('=' * 56)
 
     if not html:
