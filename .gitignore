@@ -1,0 +1,26 @@
+# ===== 版权受限资料（教学红线，勿删）=====
+# 《金融伦理与职业道德》《金融监管》均为受著作权保护的第三方作品。
+# 本站只放自己整理的知识条目与公开案例（须标注来源与时点），
+# 任何教材全文、扫描件、摘录 PDF 都不得进入本仓库 —— 一旦公开即为向不特定公众传播。
+# 误提交补救：
+#   未推送 → git rm -r --cached assets 然后 git commit --amend
+#   已推送 → git filter-repo --path assets --invert-paths 后强推（务必先告知再操作）
+assets/
+*.pdf
+*.PPT
+*.pptx
+*.doc
+*.docx
+
+# ===== 本地草稿与临时产物 =====
+_private/
+_versions/
+*.bak
+*.tmp
+*.log
+
+# ===== 系统与编辑器 =====
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
