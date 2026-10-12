@@ -1,5 +1,6 @@
 # 金融伦理智慧课堂 · 我的手写项目
 
+> 仓库位置：`D:\Github\ethics-site`（已 `git init`，可用 GitHub Desktop 打开）
 > 教材素材：`D:\读研文件\金融监管、金融伦理、职业道德智能体\`
 > （《金融伦理与职业道德》《金融监管》两本 PDF —— 版权受限，**内容不随仓库分发**，只放本地参考，
 > 站内只放你自己整理的知识点与公开案例）
@@ -45,13 +46,20 @@ python check.py
 
 ## 四、怎么存版本（每完成一个里程碑就做一次）
 
+仓库已经初始化好了，直接提交就行：
+
 ```bash
-git init                      # 只做一次
 git add .
 git commit -m "M0 项目骨架完成"
 ```
 
-**为什么必须提交？** 你会改坏它。有了 commit，随时能 `git checkout .` 回到上一个能跑的版本。
+用 **GitHub Desktop** 更省事：File → Add local repository → 选中 `D:\Github\ethics-site`，
+左下角写 Summary → Commit to main。想备份到云端再点 Publish repository。
+
+**如果误把教材 PDF 拖进来了**：`.gitignore` 已经拦住 `assets/` 和 `*.pdf`，
+用 `git status` 应该看不到它们。**看到才说明拦住了** —— 一旦在 status 里露面，先别 commit，来问我。
+
+**为什么每个里程碑都要提交？** 你会改坏它。有了 commit，随时能 `git checkout .` 回到上一个能跑的版本。
 这是你敢大胆乱改的底气。
 
 ## 五、三条铁律
